@@ -1,24 +1,24 @@
 -- bank.credit_card_fraud_detection definition
 
-CREATE TABLE `credit_card_fraud_detection` (
-  `Transaction ID` text,
-  `User ID` text,
-  `Transaction Amount` double DEFAULT NULL,
-  `Transaction Date` text,
-  `Merchant Name` text,
-  `Merchant Category` text,
-  `Country` text,
-  `Card Type` text,
-  `Fraudulent` text,
-  `Transaction Method` text,
-  `User Age` int DEFAULT NULL,
-  `User Gender` text,
-  `Account Balance` double DEFAULT NULL,
-  `Transaction Time` text,
-  `Transaction Location` text
+CREATE TABLE credit_card_fraud_detection (
+  Transaction_ID text,
+  User_ID text,
+  Transaction_Amount double DEFAULT NULL,
+  Transaction_Date text,
+  Merchant_Name text,
+  Merchant_Category text,
+  Country text,
+  Card_Type text,
+  Fraudulent text,
+  Transaction_Method text,
+  User_Age int DEFAULT NULL,
+  User_Gender text,
+  Account_Balance double DEFAULT NULL,
+  Transaction_Time text,
+  Transaction_Location text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00001','U0001',21.62,'2022-10-19','Walmart','Health & Wellness','USA','Credit','No','Online',71,'Non-Binary',25786.02,'08:27','Rural'),
 	 ('T00002','U0002',76.66,'2023-03-10','Apple Store','Health & Wellness','India','Prepaid','No','Online',80,'Non-Binary',25347.05,'17:58','Suburban'),
 	 ('T00003','U0003',494.52,'2023-01-14','Best Buy','Retail','Germany','Credit','No','In-Store',48,'Male',38215.24,'09:28','Rural'),
@@ -29,7 +29,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00008','U0008',124.96,'2022-08-22','Best Buy','Travel','Brazil','Debit','Yes','Online',52,'Male',49258.69,'16:19','Suburban'),
 	 ('T00009','U0009',761.87,'2023-12-16','Starbucks','Food & Beverage','Brazil','Debit','Yes','In-Store',38,'Non-Binary',37917.82,'13:49','Rural'),
 	 ('T00010','U0010',860.18,'2022-02-06','Best Buy','Electronics','Brazil','Prepaid','No','In-Store',64,'Non-Binary',35936.26,'01:09','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00011','U0011',803.02,'2023-07-31','Uber','Retail','USA','Debit','Yes','In-Store',36,'Non-Binary',1470.84,'08:09','Suburban'),
 	 ('T00012','U0012',704.88,'2023-03-04','Starbucks','Fuel','USA','Credit','No','In-Store',57,'Male',19539.06,'16:46','Suburban'),
 	 ('T00013','U0013',111.04,'2023-06-04','Target','Retail','Japan','Credit','No','Online',48,'Male',4612.74,'16:56','Rural'),
@@ -40,7 +40,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00018','U0018',978.1,'2022-04-13','Best Buy','Food & Beverage','France','Prepaid','No','ATM Withdrawal',60,'Female',8109.27,'19:20','Suburban'),
 	 ('T00019','U0019',606.86,'2022-08-18','Costco','Retail','South Africa','Debit','No','In-Store',79,'Non-Binary',2549.85,'04:14','Rural'),
 	 ('T00020','U0020',104.63,'2022-07-18','Amazon','Electronics','UK','Credit','No','Online',61,'Female',14900.78,'07:04','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00021','U0021',367.62,'2022-11-24','Best Buy','Travel','France','Debit','No','In-Store',66,'Male',27526.13,'23:00','Urban'),
 	 ('T00022','U0022',301.54,'2022-01-28','Best Buy','Retail','South Africa','Credit','Yes','In-Store',73,'Male',11944.19,'01:37','Suburban'),
 	 ('T00023','U0023',398.28,'2023-02-10','Costco','Electronics','Germany','Debit','No','Online',52,'Female',27596.44,'13:12','Urban'),
@@ -51,7 +51,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00028','U0028',765.17,'2022-09-08','eBay','Fuel','France','Prepaid','Yes','ATM Withdrawal',52,'Non-Binary',1071.62,'19:21','Suburban'),
 	 ('T00029','U0029',392.54,'2022-12-22','Apple Store','Travel','Japan','Debit','Yes','Online',34,'Female',3161.5,'14:11','Rural'),
 	 ('T00030','U0030',875.74,'2022-11-18','Target','Health & Wellness','Germany','Prepaid','Yes','In-Store',52,'Female',23928.74,'08:18','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00031','U0031',361.89,'2023-03-15','Uber','Retail','Japan','Debit','No','In-Store',47,'Female',40633.74,'12:38','Urban'),
 	 ('T00032','U0032',117.6,'2023-01-28','Shell','Travel','UK','Prepaid','Yes','ATM Withdrawal',79,'Non-Binary',48902.55,'02:52','Suburban'),
 	 ('T00033','U0033',394.88,'2022-08-10','Starbucks','Travel','South Africa','Debit','Yes','ATM Withdrawal',27,'Female',43314.09,'02:00','Urban'),
@@ -62,7 +62,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00038','U0038',590.71,'2023-08-22','Costco','Travel','India','Prepaid','Yes','In-Store',63,'Male',32504.14,'20:24','Suburban'),
 	 ('T00039','U0039',134.96,'2023-02-14','Shell','Food & Beverage','UK','Prepaid','No','Online',25,'Male',16074.75,'17:07','Urban'),
 	 ('T00040','U0040',496.92,'2023-02-25','Walmart','Retail','India','Debit','No','In-Store',32,'Male',11851.04,'04:13','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00041','U0041',930.3,'2023-10-12','eBay','Retail','Germany','Prepaid','No','Online',75,'Male',21552.32,'14:00','Suburban'),
 	 ('T00042','U0042',797.82,'2022-11-23','Walmart','Electronics','Australia','Debit','No','ATM Withdrawal',40,'Female',5176.24,'12:18','Suburban'),
 	 ('T00043','U0043',272.18,'2023-02-10','Best Buy','Electronics','Germany','Credit','Yes','ATM Withdrawal',18,'Non-Binary',49560.96,'23:43','Rural'),
@@ -73,7 +73,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00048','U0048',864.0,'2022-04-07','Walmart','Food & Beverage','UK','Credit','Yes','ATM Withdrawal',63,'Female',3123.98,'22:31','Urban'),
 	 ('T00049','U0049',476.12,'2023-07-05','eBay','Travel','Brazil','Prepaid','Yes','Online',80,'Non-Binary',1850.58,'18:55','Rural'),
 	 ('T00050','U0050',712.81,'2022-09-25','Costco','Electronics','Brazil','Credit','Yes','ATM Withdrawal',37,'Female',9561.35,'12:33','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00051','U0051',477.46,'2023-10-15','eBay','Travel','India','Credit','No','In-Store',25,'Non-Binary',7782.75,'09:19','Urban'),
 	 ('T00052','U0052',580.72,'2022-07-01','Costco','Fuel','USA','Debit','No','In-Store',64,'Non-Binary',12220.46,'00:53','Suburban'),
 	 ('T00053','U0053',382.58,'2023-05-05','eBay','Retail','Germany','Credit','No','Online',59,'Female',39206.83,'10:45','Urban'),
@@ -84,7 +84,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00058','U0058',520.05,'2023-05-20','Costco','Travel','India','Credit','Yes','In-Store',48,'Male',17798.31,'02:17','Suburban'),
 	 ('T00059','U0059',67.67,'2022-10-15','eBay','Retail','Germany','Prepaid','No','ATM Withdrawal',71,'Male',34548.83,'21:05','Suburban'),
 	 ('T00060','U0060',573.15,'2022-11-28','Apple Store','Food & Beverage','France','Credit','Yes','ATM Withdrawal',79,'Non-Binary',49108.98,'21:46','Suburban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00061','U0061',621.63,'2023-01-31','Apple Store','Health & Wellness','India','Credit','No','ATM Withdrawal',52,'Male',10993.75,'00:25','Urban'),
 	 ('T00062','U0062',750.82,'2022-10-08','Amazon','Electronics','USA','Credit','Yes','In-Store',79,'Male',14046.78,'16:48','Suburban'),
 	 ('T00063','U0063',514.8,'2023-01-10','Amazon','Travel','South Africa','Credit','No','ATM Withdrawal',63,'Non-Binary',6573.5,'20:36','Rural'),
@@ -95,7 +95,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00068','U0068',348.18,'2023-09-15','Costco','Food & Beverage','South Africa','Prepaid','Yes','ATM Withdrawal',76,'Female',29631.66,'21:58','Urban'),
 	 ('T00069','U0069',76.31,'2023-12-15','Costco','Retail','Brazil','Debit','No','In-Store',57,'Female',21678.11,'05:34','Urban'),
 	 ('T00070','U0070',570.54,'2022-11-01','Best Buy','Electronics','Brazil','Prepaid','No','ATM Withdrawal',27,'Non-Binary',36487.94,'14:17','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00071','U0071',649.29,'2022-01-11','eBay','Fuel','Japan','Prepaid','No','In-Store',48,'Female',48245.87,'10:38','Urban'),
 	 ('T00072','U0072',263.28,'2023-03-06','Walmart','Health & Wellness','Germany','Prepaid','No','Online',32,'Non-Binary',16036.19,'13:43','Urban'),
 	 ('T00073','U0073',124.81,'2022-01-08','Shell','Electronics','USA','Credit','Yes','Online',21,'Female',8160.47,'16:32','Suburban'),
@@ -106,7 +106,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00078','U0078',165.53,'2022-01-20','Walmart','Food & Beverage','UK','Prepaid','No','Online',26,'Non-Binary',35195.41,'03:11','Suburban'),
 	 ('T00079','U0079',742.94,'2022-09-17','Shell','Food & Beverage','France','Credit','No','ATM Withdrawal',80,'Female',14032.0,'09:41','Suburban'),
 	 ('T00080','U0080',179.4,'2023-08-14','Starbucks','Fuel','Canada','Prepaid','Yes','ATM Withdrawal',76,'Female',10574.22,'09:30','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00081','U0081',851.11,'2023-04-22','eBay','Health & Wellness','Brazil','Debit','No','Online',39,'Non-Binary',41501.95,'14:05','Suburban'),
 	 ('T00082','U0082',919.5,'2023-07-07','Walmart','Food & Beverage','Japan','Prepaid','No','ATM Withdrawal',71,'Non-Binary',39405.01,'10:53','Suburban'),
 	 ('T00083','U0083',904.99,'2022-09-10','Target','Health & Wellness','UK','Prepaid','Yes','In-Store',39,'Non-Binary',32920.98,'02:56','Urban'),
@@ -117,7 +117,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00088','U0088',677.36,'2023-04-06','Apple Store','Food & Beverage','South Africa','Prepaid','No','In-Store',59,'Female',46156.93,'07:03','Urban'),
 	 ('T00089','U0089',339.66,'2022-04-01','Uber','Electronics','USA','Credit','No','ATM Withdrawal',37,'Non-Binary',45288.74,'08:10','Rural'),
 	 ('T00090','U0090',67.07,'2023-04-08','Apple Store','Travel','UK','Prepaid','Yes','ATM Withdrawal',48,'Female',4061.06,'14:03','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00091','U0091',738.89,'2023-04-26','Walmart','Travel','Japan','Credit','Yes','Online',33,'Non-Binary',23088.36,'18:22','Rural'),
 	 ('T00092','U0092',736.05,'2023-01-03','Best Buy','Travel','Japan','Prepaid','Yes','Online',46,'Non-Binary',20592.62,'01:16','Rural'),
 	 ('T00093','U0093',667.65,'2023-04-17','eBay','Food & Beverage','India','Credit','Yes','In-Store',49,'Non-Binary',45512.59,'20:27','Urban'),
@@ -128,7 +128,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00098','U0098',77.0,'2023-10-01','Shell','Travel','Canada','Prepaid','Yes','Online',31,'Male',24356.77,'07:56','Rural'),
 	 ('T00099','U0099',643.88,'2022-03-07','eBay','Retail','South Africa','Prepaid','No','ATM Withdrawal',55,'Female',16311.92,'12:31','Urban'),
 	 ('T00100','U0100',330.95,'2022-03-26','Walmart','Retail','Australia','Prepaid','Yes','Online',46,'Female',35944.22,'18:30','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00101','U0101',502.91,'2022-03-11','eBay','Fuel','USA','Debit','Yes','ATM Withdrawal',65,'Male',33906.97,'12:31','Suburban'),
 	 ('T00102','U0102',932.84,'2023-12-08','Best Buy','Retail','Japan','Debit','No','ATM Withdrawal',24,'Non-Binary',9967.35,'19:36','Rural'),
 	 ('T00103','U0103',183.67,'2023-06-25','Walmart','Travel','Australia','Prepaid','No','In-Store',34,'Male',40021.47,'10:20','Urban'),
@@ -139,7 +139,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00108','U0108',479.1,'2023-12-18','Best Buy','Electronics','Japan','Credit','Yes','ATM Withdrawal',80,'Non-Binary',20552.02,'01:49','Suburban'),
 	 ('T00109','U0109',904.64,'2022-03-21','Target','Health & Wellness','Japan','Credit','No','ATM Withdrawal',79,'Male',10108.4,'07:40','Rural'),
 	 ('T00110','U0110',81.63,'2022-01-13','Uber','Health & Wellness','Australia','Prepaid','Yes','In-Store',30,'Female',38453.41,'01:54','Suburban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00111','U0111',895.97,'2023-11-20','Walmart','Travel','USA','Debit','Yes','Online',26,'Male',40460.59,'20:12','Rural'),
 	 ('T00112','U0112',47.77,'2022-02-04','Apple Store','Travel','Brazil','Prepaid','No','In-Store',63,'Female',10269.51,'04:24','Rural'),
 	 ('T00113','U0113',480.2,'2023-07-28','Costco','Fuel','USA','Credit','Yes','Online',80,'Female',14075.64,'18:41','Urban'),
@@ -150,7 +150,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00118','U0118',437.35,'2022-07-06','Shell','Electronics','South Africa','Debit','No','In-Store',18,'Female',16665.73,'20:48','Suburban'),
 	 ('T00119','U0119',720.19,'2022-11-28','Best Buy','Travel','South Africa','Debit','No','Online',42,'Male',18828.25,'04:33','Suburban'),
 	 ('T00120','U0120',415.17,'2022-03-11','Shell','Travel','Japan','Credit','Yes','Online',67,'Non-Binary',1066.49,'14:02','Suburban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00121','U0121',500.5,'2023-08-27','eBay','Food & Beverage','USA','Credit','Yes','Online',52,'Non-Binary',49030.08,'14:15','Urban'),
 	 ('T00122','U0122',380.39,'2022-02-04','Shell','Retail','France','Credit','Yes','In-Store',19,'Non-Binary',49160.85,'19:49','Suburban'),
 	 ('T00123','U0123',122.86,'2022-02-26','Uber','Fuel','Germany','Credit','Yes','ATM Withdrawal',75,'Female',34555.94,'00:35','Urban'),
@@ -161,7 +161,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00128','U0128',70.16,'2023-08-30','Starbucks','Travel','USA','Debit','No','Online',71,'Female',5277.3,'21:02','Rural'),
 	 ('T00129','U0129',241.79,'2023-07-03','Costco','Electronics','UK','Debit','No','In-Store',73,'Non-Binary',36789.98,'03:28','Rural'),
 	 ('T00130','U0130',795.93,'2022-12-04','Target','Retail','Brazil','Credit','Yes','Online',58,'Male',42289.72,'06:57','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00131','U0131',877.55,'2023-01-27','Best Buy','Fuel','Japan','Debit','No','In-Store',51,'Non-Binary',12779.59,'17:22','Urban'),
 	 ('T00132','U0132',863.87,'2023-11-12','Uber','Health & Wellness','Australia','Debit','No','Online',55,'Non-Binary',40954.23,'05:10','Suburban'),
 	 ('T00133','U0133',675.88,'2022-02-07','Target','Food & Beverage','Canada','Prepaid','Yes','In-Store',76,'Male',39278.59,'04:15','Suburban'),
@@ -172,7 +172,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00138','U0138',339.71,'2022-02-10','Shell','Travel','Australia','Prepaid','No','ATM Withdrawal',30,'Non-Binary',12187.99,'05:41','Rural'),
 	 ('T00139','U0139',76.87,'2023-01-12','Amazon','Travel','Japan','Debit','Yes','Online',72,'Female',22760.92,'19:11','Urban'),
 	 ('T00140','U0140',864.41,'2022-06-23','Costco','Food & Beverage','UK','Credit','Yes','In-Store',70,'Male',6535.63,'23:38','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00141','U0141',801.47,'2022-12-18','Shell','Retail','UK','Credit','Yes','Online',39,'Male',375.63,'05:33','Urban'),
 	 ('T00142','U0142',442.83,'2022-06-27','Costco','Food & Beverage','Australia','Credit','No','In-Store',22,'Male',5866.07,'11:04','Suburban'),
 	 ('T00143','U0143',399.43,'2023-12-08','Apple Store','Health & Wellness','Germany','Credit','No','In-Store',55,'Male',22093.7,'14:52','Rural'),
@@ -183,7 +183,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00148','U0148',774.1,'2023-04-30','Apple Store','Fuel','Germany','Prepaid','Yes','Online',20,'Male',19623.73,'09:29','Suburban'),
 	 ('T00149','U0149',703.26,'2023-10-22','Shell','Retail','USA','Prepaid','No','Online',40,'Non-Binary',28761.18,'06:00','Suburban'),
 	 ('T00150','U0150',324.14,'2023-01-30','eBay','Health & Wellness','Brazil','Credit','Yes','ATM Withdrawal',40,'Female',24061.27,'20:28','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00151','U0151',894.35,'2023-07-14','Shell','Travel','India','Prepaid','No','In-Store',21,'Non-Binary',13513.51,'07:20','Rural'),
 	 ('T00152','U0152',873.23,'2023-02-09','Starbucks','Food & Beverage','Japan','Prepaid','No','Online',55,'Non-Binary',21675.92,'21:43','Suburban'),
 	 ('T00153','U0153',983.02,'2023-03-22','Shell','Food & Beverage','France','Prepaid','No','ATM Withdrawal',79,'Male',7289.85,'18:59','Suburban'),
@@ -194,7 +194,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00158','U0158',636.85,'2023-04-01','Shell','Food & Beverage','Germany','Prepaid','No','In-Store',66,'Male',17408.53,'20:13','Rural'),
 	 ('T00159','U0159',543.73,'2022-09-23','Starbucks','Food & Beverage','USA','Prepaid','Yes','ATM Withdrawal',21,'Female',7231.24,'23:01','Urban'),
 	 ('T00160','U0160',117.36,'2023-04-06','Costco','Electronics','Canada','Debit','Yes','In-Store',71,'Male',30195.3,'11:08','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00161','U0161',50.24,'2022-11-02','Uber','Fuel','Canada','Debit','Yes','In-Store',78,'Male',19742.77,'10:17','Suburban'),
 	 ('T00162','U0162',444.52,'2022-09-24','Amazon','Travel','India','Credit','Yes','Online',44,'Female',27249.97,'07:15','Suburban'),
 	 ('T00163','U0163',153.73,'2023-02-25','Amazon','Travel','France','Prepaid','No','In-Store',26,'Non-Binary',29293.75,'11:35','Urban'),
@@ -205,7 +205,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00168','U0168',23.62,'2023-08-12','Starbucks','Travel','Brazil','Credit','Yes','ATM Withdrawal',40,'Male',36344.35,'09:02','Urban'),
 	 ('T00169','U0169',798.73,'2023-07-08','Walmart','Health & Wellness','UK','Debit','Yes','Online',21,'Female',18624.75,'00:52','Urban'),
 	 ('T00170','U0170',646.25,'2023-11-22','Apple Store','Health & Wellness','Australia','Debit','Yes','In-Store',75,'Female',23064.73,'04:55','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00171','U0171',696.56,'2022-03-04','Uber','Food & Beverage','Germany','Credit','No','In-Store',23,'Female',4156.01,'00:04','Suburban'),
 	 ('T00172','U0172',565.77,'2023-02-05','Shell','Food & Beverage','Japan','Debit','Yes','ATM Withdrawal',43,'Non-Binary',18367.35,'09:52','Rural'),
 	 ('T00173','U0173',719.27,'2022-07-08','Costco','Electronics','Brazil','Prepaid','Yes','In-Store',65,'Female',27518.82,'13:58','Rural'),
@@ -216,7 +216,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00178','U0178',16.25,'2022-04-15','Walmart','Retail','Germany','Prepaid','No','In-Store',30,'Female',17013.06,'12:59','Rural'),
 	 ('T00179','U0179',1.05,'2022-09-10','Walmart','Retail','USA','Prepaid','No','In-Store',41,'Non-Binary',34841.07,'07:44','Suburban'),
 	 ('T00180','U0180',897.01,'2022-03-19','Starbucks','Health & Wellness','Japan','Credit','Yes','In-Store',48,'Non-Binary',2567.76,'13:56','Suburban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00181','U0181',904.84,'2022-01-26','eBay','Travel','Brazil','Credit','No','ATM Withdrawal',40,'Male',17444.49,'22:42','Urban'),
 	 ('T00182','U0182',155.47,'2023-06-21','Shell','Fuel','Brazil','Debit','Yes','ATM Withdrawal',48,'Female',36194.91,'10:21','Urban'),
 	 ('T00183','U0183',780.95,'2022-09-20','Target','Travel','Australia','Debit','Yes','In-Store',53,'Female',20749.56,'11:25','Urban'),
@@ -227,7 +227,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00188','U0188',808.51,'2023-03-08','Target','Food & Beverage','India','Credit','No','Online',39,'Male',18777.49,'20:56','Suburban'),
 	 ('T00189','U0189',956.84,'2023-05-11','Shell','Health & Wellness','Brazil','Credit','Yes','ATM Withdrawal',18,'Female',28179.36,'03:44','Suburban'),
 	 ('T00190','U0190',21.37,'2023-03-01','Costco','Travel','India','Debit','Yes','In-Store',57,'Male',10307.17,'07:09','Suburban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00191','U0191',384.86,'2022-05-22','Target','Food & Beverage','UK','Credit','Yes','Online',30,'Male',28054.5,'12:04','Rural'),
 	 ('T00192','U0192',954.59,'2022-05-31','Starbucks','Food & Beverage','Brazil','Debit','No','Online',62,'Female',26674.09,'20:19','Urban'),
 	 ('T00193','U0193',53.02,'2022-08-27','Walmart','Fuel','Canada','Prepaid','No','Online',64,'Non-Binary',40107.83,'03:59','Rural'),
@@ -238,7 +238,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00198','U0198',157.54,'2023-04-19','Starbucks','Retail','Brazil','Debit','Yes','ATM Withdrawal',77,'Non-Binary',163.65,'05:45','Suburban'),
 	 ('T00199','U0199',643.79,'2022-10-27','Target','Food & Beverage','Germany','Debit','Yes','Online',73,'Female',18941.47,'09:19','Rural'),
 	 ('T00200','U0200',546.29,'2022-09-08','eBay','Retail','France','Prepaid','No','In-Store',49,'Non-Binary',31824.55,'21:05','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00201','U0201',905.62,'2023-01-20','Costco','Food & Beverage','Brazil','Debit','Yes','ATM Withdrawal',24,'Non-Binary',34629.99,'15:16','Rural'),
 	 ('T00202','U0202',967.03,'2023-08-20','eBay','Retail','Brazil','Credit','No','In-Store',57,'Male',21488.08,'23:50','Rural'),
 	 ('T00203','U0203',260.5,'2023-10-10','Amazon','Electronics','Australia','Debit','No','In-Store',69,'Female',38462.24,'19:22','Suburban'),
@@ -249,7 +249,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00208','U0208',940.5,'2022-07-27','Uber','Health & Wellness','Germany','Prepaid','No','Online',53,'Non-Binary',25060.1,'17:21','Urban'),
 	 ('T00209','U0209',921.6,'2023-01-16','Costco','Fuel','India','Credit','Yes','ATM Withdrawal',62,'Non-Binary',30818.36,'05:39','Suburban'),
 	 ('T00210','U0210',373.44,'2022-06-12','Shell','Travel','South Africa','Prepaid','Yes','In-Store',45,'Non-Binary',15813.93,'13:44','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00211','U0211',577.59,'2023-07-26','Shell','Food & Beverage','Germany','Debit','Yes','ATM Withdrawal',65,'Male',40320.42,'16:20','Urban'),
 	 ('T00212','U0212',975.45,'2023-09-08','Target','Fuel','Australia','Prepaid','No','In-Store',60,'Male',18073.1,'01:36','Rural'),
 	 ('T00213','U0213',536.12,'2023-08-18','Starbucks','Retail','USA','Prepaid','No','Online',57,'Female',10226.09,'03:07','Urban'),
@@ -260,7 +260,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00218','U0218',286.19,'2023-04-14','Amazon','Electronics','UK','Debit','Yes','In-Store',48,'Female',15985.38,'23:31','Suburban'),
 	 ('T00219','U0219',961.52,'2023-01-18','Costco','Retail','UK','Prepaid','No','In-Store',50,'Female',18990.25,'22:41','Suburban'),
 	 ('T00220','U0220',603.07,'2023-02-21','Uber','Health & Wellness','Canada','Credit','Yes','ATM Withdrawal',25,'Male',44977.52,'19:17','Suburban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00221','U0221',258.63,'2023-12-13','Costco','Fuel','Canada','Credit','No','In-Store',55,'Female',38607.74,'05:54','Suburban'),
 	 ('T00222','U0222',398.66,'2022-08-21','Amazon','Electronics','UK','Prepaid','No','ATM Withdrawal',60,'Male',8353.31,'03:18','Rural'),
 	 ('T00223','U0223',695.14,'2022-01-30','Walmart','Retail','Japan','Debit','Yes','ATM Withdrawal',77,'Female',11523.95,'02:17','Rural'),
@@ -271,7 +271,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00228','U0228',580.91,'2022-08-09','Walmart','Travel','Brazil','Prepaid','No','ATM Withdrawal',47,'Non-Binary',42839.42,'19:21','Rural'),
 	 ('T00229','U0229',491.61,'2022-01-31','eBay','Fuel','Canada','Credit','No','In-Store',26,'Male',6191.25,'03:46','Rural'),
 	 ('T00230','U0230',640.73,'2023-12-28','Amazon','Health & Wellness','South Africa','Credit','No','In-Store',42,'Female',3482.05,'23:15','Suburban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00231','U0231',657.06,'2023-04-06','Best Buy','Travel','India','Prepaid','Yes','In-Store',51,'Female',4407.26,'15:31','Suburban'),
 	 ('T00232','U0232',866.26,'2023-05-13','Costco','Fuel','South Africa','Debit','Yes','Online',50,'Female',24446.69,'03:43','Rural'),
 	 ('T00233','U0233',922.31,'2023-07-08','eBay','Electronics','South Africa','Credit','No','Online',55,'Male',10079.61,'10:09','Rural'),
@@ -282,7 +282,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00238','U0238',69.65,'2023-05-28','Shell','Food & Beverage','Japan','Credit','No','In-Store',43,'Male',21176.11,'07:44','Suburban'),
 	 ('T00239','U0239',63.8,'2023-09-24','Uber','Fuel','Canada','Prepaid','Yes','In-Store',22,'Non-Binary',40063.05,'01:29','Urban'),
 	 ('T00240','U0240',505.21,'2022-08-13','Target','Retail','France','Credit','Yes','ATM Withdrawal',53,'Male',44707.91,'08:42','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00241','U0241',619.3,'2023-01-18','Uber','Health & Wellness','Japan','Debit','Yes','Online',56,'Male',3536.57,'08:12','Rural'),
 	 ('T00242','U0242',871.04,'2022-08-28','Starbucks','Retail','Japan','Prepaid','Yes','ATM Withdrawal',43,'Non-Binary',29618.06,'21:53','Rural'),
 	 ('T00243','U0243',791.5,'2022-08-07','Costco','Retail','France','Prepaid','Yes','ATM Withdrawal',52,'Female',23024.95,'01:45','Suburban'),
@@ -293,7 +293,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00248','U0248',159.5,'2022-07-10','Shell','Health & Wellness','USA','Debit','Yes','ATM Withdrawal',30,'Non-Binary',43432.46,'23:10','Urban'),
 	 ('T00249','U0249',328.41,'2022-02-10','Costco','Fuel','Brazil','Debit','Yes','ATM Withdrawal',58,'Male',30309.21,'18:08','Rural'),
 	 ('T00250','U0250',662.25,'2022-02-16','Best Buy','Electronics','South Africa','Prepaid','Yes','In-Store',47,'Male',36958.34,'09:34','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00251','U0251',345.94,'2023-06-20','Shell','Fuel','UK','Prepaid','No','ATM Withdrawal',52,'Male',47575.72,'03:49','Rural'),
 	 ('T00252','U0252',350.04,'2023-11-05','eBay','Fuel','Germany','Debit','Yes','ATM Withdrawal',28,'Male',25502.63,'23:10','Suburban'),
 	 ('T00253','U0253',808.45,'2022-08-11','Costco','Food & Beverage','Brazil','Debit','Yes','ATM Withdrawal',55,'Male',40009.97,'13:19','Suburban'),
@@ -304,7 +304,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00258','U0258',462.86,'2023-09-19','Best Buy','Health & Wellness','Canada','Debit','Yes','In-Store',77,'Female',22088.79,'14:11','Rural'),
 	 ('T00259','U0259',992.93,'2022-05-22','Costco','Electronics','France','Debit','Yes','In-Store',41,'Male',16742.03,'09:34','Rural'),
 	 ('T00260','U0260',760.16,'2023-09-05','Amazon','Retail','Germany','Prepaid','No','ATM Withdrawal',31,'Non-Binary',28995.0,'06:12','Urban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00261','U0261',406.36,'2023-09-15','Shell','Fuel','France','Debit','No','In-Store',54,'Female',16093.9,'17:57','Urban'),
 	 ('T00262','U0262',414.23,'2023-12-11','Starbucks','Food & Beverage','Australia','Debit','Yes','ATM Withdrawal',69,'Non-Binary',30746.35,'11:40','Suburban'),
 	 ('T00263','U0263',391.58,'2022-07-04','Target','Fuel','USA','Prepaid','Yes','ATM Withdrawal',41,'Non-Binary',30926.78,'00:49','Suburban'),
@@ -315,7 +315,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00268','U0268',207.14,'2022-02-08','Best Buy','Electronics','France','Prepaid','No','ATM Withdrawal',21,'Non-Binary',49416.4,'15:20','Urban'),
 	 ('T00269','U0269',265.63,'2022-03-14','Walmart','Travel','Australia','Debit','No','In-Store',26,'Male',16832.22,'20:36','Rural'),
 	 ('T00270','U0270',371.63,'2022-02-28','Best Buy','Retail','France','Debit','Yes','ATM Withdrawal',47,'Non-Binary',20108.62,'20:32','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00271','U0271',491.86,'2023-07-27','Apple Store','Food & Beverage','South Africa','Prepaid','Yes','Online',68,'Non-Binary',28679.57,'01:03','Rural'),
 	 ('T00272','U0272',126.17,'2022-02-22','Target','Fuel','France','Debit','No','ATM Withdrawal',23,'Non-Binary',45824.86,'06:06','Urban'),
 	 ('T00273','U0273',691.24,'2022-01-23','Amazon','Retail','Japan','Credit','Yes','ATM Withdrawal',58,'Non-Binary',23399.44,'00:56','Rural'),
@@ -326,7 +326,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00278','U0278',655.08,'2022-12-15','Amazon','Electronics','UK','Credit','No','In-Store',46,'Male',24747.75,'17:52','Urban'),
 	 ('T00279','U0279',725.02,'2023-01-25','Walmart','Health & Wellness','South Africa','Credit','Yes','Online',43,'Male',27593.21,'18:56','Suburban'),
 	 ('T00280','U0280',195.21,'2022-09-02','Walmart','Fuel','USA','Credit','Yes','Online',60,'Female',5445.12,'02:07','Suburban');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00281','U0281',320.68,'2023-02-28','eBay','Health & Wellness','France','Prepaid','Yes','Online',42,'Female',19964.04,'06:32','Urban'),
 	 ('T00282','U0282',669.26,'2023-02-28','Target','Fuel','Germany','Credit','No','ATM Withdrawal',72,'Male',16054.08,'05:55','Suburban'),
 	 ('T00283','U0283',455.64,'2022-04-26','Uber','Food & Beverage','India','Debit','No','ATM Withdrawal',56,'Female',18266.6,'07:33','Suburban'),
@@ -337,7 +337,7 @@ INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transa
 	 ('T00288','U0288',563.62,'2023-08-28','Walmart','Retail','USA','Debit','Yes','Online',80,'Non-Binary',13786.33,'17:30','Suburban'),
 	 ('T00289','U0289',555.59,'2023-11-05','Starbucks','Health & Wellness','India','Debit','No','ATM Withdrawal',36,'Female',16000.62,'06:51','Suburban'),
 	 ('T00290','U0290',470.08,'2022-06-06','Costco','Electronics','Germany','Debit','No','Online',56,'Non-Binary',21799.98,'04:41','Rural');
-INSERT INTO bank.credit_card_fraud_detection (`Transaction ID`,`User ID`,`Transaction Amount`,`Transaction Date`,`Merchant Name`,`Merchant Category`,Country,`Card Type`,Fraudulent,`Transaction Method`,`User Age`,`User Gender`,`Account Balance`,`Transaction Time`,`Transaction Location`) VALUES
+INSERT INTO bank.credit_card_fraud_detection (Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant_Name,Merchant_Category,Country,Card_Type,Fraudulent,Transaction_Method,User_Age,User_Gender,Account_Balance,Transaction_Time,Transaction_Location) VALUES
 	 ('T00291','U0291',855.93,'2022-06-06','Uber','Health & Wellness','France','Credit','Yes','ATM Withdrawal',42,'Non-Binary',35757.68,'05:13','Suburban'),
 	 ('T00292','U0292',114.12,'2022-09-18','Costco','Fuel','France','Prepaid','Yes','Online',28,'Non-Binary',41242.92,'10:04','Rural'),
 	 ('T00293','U0293',43.46,'2023-02-20','Walmart','Electronics','UK','Debit','Yes','ATM Withdrawal',30,'Male',37432.2,'03:37','Urban'),
